@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="products">
+        ${products.map( 
+            (product) => `
+      <li>
+          <div class="product">
+          <a href="/#/product/${product._id}">
+             <img src="${product.image}" alt="${product.name}"/>
+           </a>
+           <div class="product-name">
+           <a href="/#/product/1">
+             ${product.name}
+           </a>
+           </div>
+           <div class="product-brand">
+            ${product.brand}
+           </div>
+           <div class="product-price">
+            ${product.price}
+      
+         </div>
+        </div>
+       </li>
+</body>
+</html>
